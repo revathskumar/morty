@@ -1,4 +1,11 @@
-# devtools_devices
+# morty
+
+> CLI to manage custom emulated devices on Chromium-based browser devtools.
+
+> [!CAUTION]
+> Tested only in Vivaldi (7.5.3735.54 (Stable channel) stable (64-bit)) on Debian
+
+### Dev setup
 
 To install dependencies:
 
@@ -12,4 +19,15 @@ To run:
 bun run index.ts
 ```
 
-This project was created using `bun init` in bun v1.2.19. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+## Acknowledgement
+
+- Data from [list-of-custom-emulated-devices-in-chrome](https://github.com/alxwndr/list-of-custom-emulated-devices-in-chrome) by [@alxwndr](https://github.com/alxwndr)
+- Updated Data from [list-of-custom-emulated-devices-in-chrome #1](https://github.com/alxwndr/list-of-custom-emulated-devices-in-chrome/pull/1) by [@thelegend09](https://github.com/thelegend09)
+
+## Similar Projects
+
+- [vibranium](https://github.com/Pittan/vibranium)
+
+## License
+
+MIT

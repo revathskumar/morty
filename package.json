@@ -1,12 +1,30 @@
 {
-  "name": "devtools_devices",
+  "name": "morty",
   "module": "index.ts",
   "type": "module",
-  "private": true,
+  "private": false,
+  "types": "./morty.d.ts",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "rollup": "^4.46.2"
   },
   "peerDependencies": {
     "typescript": "^5"
-  }
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.8.0",
+    "debug": "^4.4.1",
+    "inquirerjs-checkbox-search": "^0.6.0",
+    "jsonc-parser": "^3.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://codeberg.org/0x52534B/morty.git"
+  },
+  "bugs": {
+    "url": "https://codeberg.org/0x52534B/morty/issues"
+  },
+  "homepage": "https://codeberg.org/0x52534B/morty#readme",
+  "author": "Revath S Kumar <rsk@revathskumar.com> (http://blog.revathskumar.com/)",
+  "license": "MIT"
 }
