@@ -2,6 +2,7 @@ import { writeFile, copyFile } from "node:fs/promises";
 import PreferencesManager from "./PreferencesManager";
 
 class PreferencesWriter extends PreferencesManager {
+  #backupFilePath: string | undefined;
   constructor(
     browser: string,
     profile = "Default",
@@ -103,9 +104,13 @@ class PreferencesWriter extends PreferencesManager {
   }
 
   getBackupFilePath() {
-    return `/tmp/Preferences-${this.browser}-${
+    if (this.#backupFilePath) {
+      return this.#backupFilePath;
+    }
+    this.#backupFilePath = `/tmp/Preferences-${this.browser}-${
       this.profile
     }-${this.#getCurrentDateTime()}.bak`;
+    return this.#backupFilePath;
   }
 
   async #createBackup() {
