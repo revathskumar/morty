@@ -54,6 +54,8 @@ export async function run() {
       message: "Select devices",
       choices: deviceChoices,
       required: true,
+      loop: false,
+      pageSize: 10,
     });
 
     const confirmAnswer = await confirm({
