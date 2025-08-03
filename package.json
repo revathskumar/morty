@@ -1,12 +1,25 @@
 {
-  "name": "morty",
-  "module": "index.ts",
+  "name": "@revathskumar/morty",
+  "version": "0.0.0",
+  "module": "dist/index.js",
   "type": "module",
   "private": false,
   "types": "./morty.d.ts",
+  "bin": {
+    "morty": "bin/morty"
+  },
+  "files": [
+    "bin/",
+    "data/",
+    "dist/",
+    "src/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "bun build.ts"
+  },
   "devDependencies": {
-    "@types/bun": "latest",
-    "rollup": "^4.46.2"
+    "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
