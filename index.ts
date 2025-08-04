@@ -8,12 +8,8 @@ export async function run() {
   try {
     const selectedBrowser = await select({
       message: "Select a Browser",
-      default: "vivaldi",
+      default: "google-chrome",
       choices: [
-        {
-          name: "Vivaldi",
-          value: "vivaldi",
-        },
         {
           name: "Google Chrome",
           value: "google-chrome",
@@ -25,6 +21,10 @@ export async function run() {
         {
           name: "Chromium",
           value: "chromium",
+        },
+        {
+          name: "Vivaldi",
+          value: "vivaldi",
         },
       ],
     });
