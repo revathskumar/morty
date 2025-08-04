@@ -15,8 +15,10 @@ bun install
 
 To run:
 
+Copy the preferences file to `tmp/Preferences` and then run
+
 ```bash
-bun run index.ts
+TEST_MODE=true bun run index.ts
 ```
 
 ## Acknowledgement
