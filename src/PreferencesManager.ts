@@ -7,6 +7,13 @@ abstract class PreferencesManager {
   protected deviceListKey: string;
   protected profile: string;
 
+  protected macPath: Record<string, string> = {
+    vivaldi: "Vivaldi",
+    "google-chrome": "Google/Chrome",
+    "google-chrome-canary": "Google/Chrome Canary",
+    chromium: "Chromium",
+  };
+
   constructor(browser: string, profile: string, deviceListKey: string) {
     this.browser = browser;
     this.profile = profile;
@@ -15,8 +22,25 @@ abstract class PreferencesManager {
 
   public getFilePath() {
     const homeDir = homedir();
+
+    const osType =
+      process.platform === "darwin"
+        ? "mac"
+        : process.platform === "win32"
+        ? "windows"
+        : "linux";
     if (process.env.TEST_MODE) {
       return join("tmp", "Preferences");
+    }
+    if (osType === "mac") {
+      return join(
+        homeDir,
+        "Library",
+        "Application Support",
+        this.macPath[this.browser]!,
+        this.profile,
+        "Preferences"
+      );
     }
     return join(homeDir, ".config", this.browser, this.profile, "Preferences");
   }
