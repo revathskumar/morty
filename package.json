@@ -15,6 +15,13 @@
     "src/",
     "README.md"
   ],
+  "keywords": [
+    "devtools",
+    "chrome",
+    "chromium",
+    "emulation",
+    "devices"
+  ],
   "scripts": {
     "build": "bun build.ts"
   },
