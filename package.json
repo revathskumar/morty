@@ -32,12 +32,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://codeberg.org/0x52534B/morty.git"
+    "url": "git+https://github.com/revathskumar/morty.git"
   },
   "bugs": {
-    "url": "https://codeberg.org/0x52534B/morty/issues"
+    "url": "https://github.com/revathskumar/morty/issues"
   },
-  "homepage": "https://codeberg.org/0x52534B/morty#readme",
+  "homepage": "https://github.com/revathskumar/morty/morty#readme",
   "author": "Revath S Kumar <rsk@revathskumar.com> (http://blog.revathskumar.com/)",
   "license": "MIT"
 }
