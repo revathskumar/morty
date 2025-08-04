@@ -13,6 +13,7 @@
     "data/",
     "dist/",
     "src/",
+    "LICENSE",
     "README.md"
   ],
   "keywords": [
