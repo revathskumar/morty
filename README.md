@@ -2,8 +2,9 @@
 
 > CLI to manage custom emulated devices on Chromium-based browser devtools.
 
-> [!CAUTION]
-> Tested only in Vivaldi (7.5.3735.54 (Stable channel) stable (64-bit)) on Debian
+## Demo
+
+[![morty demo](https://asciinema.org/a/ReNxY8dpGklHm0W4t0n9jGrGu.svg)](https://asciinema.org/a/ReNxY8dpGklHm0W4t0n9jGrGu)
 
 ### Dev setup
 
