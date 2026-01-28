@@ -1,6 +1,6 @@
 {
   "name": "@revathskumar/morty",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "module": "dist/index.js",
   "type": "module",
   "private": false,
