@@ -6,6 +6,11 @@
 
 [![morty demo](https://asciinema.org/a/ReNxY8dpGklHm0W4t0n9jGrGu.svg)](https://asciinema.org/a/ReNxY8dpGklHm0W4t0n9jGrGu)
 
+ ## Usage
+ 
+ * Node : `npx @revathskumar/morty`
+ * Bun : `bunx --bun @revathskumar/morty`
+
 ### Dev setup
 
 To install dependencies:
