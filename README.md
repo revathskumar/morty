@@ -24,7 +24,7 @@ To run:
 Copy the preferences file to `tmp/Preferences` and then run
 
 ```bash
-TEST_MODE=true bun run index.ts
+DEBUG=morty TEST_MODE=true bun run index.ts
 ```
 
 ## Supported Browsers
