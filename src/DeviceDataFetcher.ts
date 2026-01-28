@@ -1,11 +1,8 @@
-import { parse } from "jsonc-parser";
-import { readFile } from "node:fs/promises";
+import data from "../data/devices.jsonc" with { type: "jsonc" };
 
 class DeviceDataFetcher {
-  async read(): Promise<DataFile> {
-    const devicesBuf = await readFile(`data/devices.jsonc`);
-
-    return parse(devicesBuf.toString());
+  async read(): DataFile {
+    return data;
   }
 }
 
