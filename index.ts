@@ -1,8 +1,11 @@
 import { select, confirm } from "@inquirer/prompts";
 import checkboxSearch from "inquirerjs-checkbox-search";
+import debug from "debug";
 import PreferencesReader from "./src/PreferencesReader";
 import PreferencesWriter from "./src/PreferencesWriter";
 import DeviceDataFetcher from "./src/DeviceDataFetcher";
+
+const log = debug("morty");
 
 export async function run() {
   try {
@@ -86,6 +89,7 @@ export async function run() {
     if (process.env.TEST_MODE) {
       console.error(err);
     }
+    log(err);
     console.log("Morty exiting!...");
     console.log(`Good Bye!!`);
   }
