@@ -33,9 +33,9 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@inquirer/prompts": "^7.8.0",
-    "debug": "^4.4.1",
-    "inquirerjs-checkbox-search": "^0.6.0",
+    "@inquirer/prompts": "^8.2.0",
+    "debug": "^4.4.3",
+    "inquirerjs-checkbox-search": "^1.0.13",
     "jsonc-parser": "^3.3.1"
   },
   "repository": {
